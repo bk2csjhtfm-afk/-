@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>إدخال اللاعبين</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>أدخل أسماء اللاعبين</h1>
+        <p>الحد الأدنى: 6 لاعبين</p>
+        <div id="players-list">
+            <input type="text" placeholder="اسم اللاعب 1" class="player-input">
+        </div>
+        <button id="add-player">أضف لاعبًا آخر</button>
+        <p>اختر مستوى الصعوبة:</p>
+        <select id="difficulty">
+            <option value="easy">سهل</option>
+            <option value="medium">متوسط</option>
+            <option value="hard">صعب</option>
+        </select>
+        <button id="confirm-players">تأكيد اللاعبين</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

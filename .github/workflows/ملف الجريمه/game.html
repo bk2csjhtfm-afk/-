@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>اللعبة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="scenario-screen">
+            <h1>السيناريو الافتتاحي</h1>
+            <div id="scenario-text"></div>
+            <div id="random-hint"></div>
+            <button id="next-to-roles">التالي</button>
+        </div>
+        <div id="killer-screen" class="hidden">
+            <h1>أنت القاتل!</h1>
+            <p>اختر أداة القتل:</p>
+            <select id="weapon-select"></select>
+            <p>اختر الدليل:</p>
+            <select id="evidence-select"></select>
+            <p>اختر مكان الجريمة:</p>
+            <select id="location-select"></select>
+            <button id="confirm-killer">تأكيد</button>
+        </div>
+        <div id="forensic-screen" class="hidden">
+            <h1>أنت الطبيب الشرعي!</h1>
+            <div id="hints"></div>
+            <button id="next-to-investigation">التالي</button>
+        </div>
+        <div id="investigation-screen" class="hidden">
+            <h1>مرحلة التحقيق</h1>
+            <div id="timer">الوقت المتبقي: 10:00</div>
+            <div id="puzzle-hint"></div>
+            <div id="chat">ابدأ النقاش هنا...</div>
+            <button id="end-investigation">انتهاء التحقيق</button>
+        </div>
+        <div id="voting-screen" class="hidden">
+            <h1>التصويت</h1>
+            <div id="vote-list"></div>
+            <button id="submit-votes">إرسال التصويت</button>
+        </div>
+        <div id="results-screen" class="hidden">
+            <h1>النتائج</h1>
+            <div id="results"></div>
+            <button id="new-game">لعبة جديدة</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
